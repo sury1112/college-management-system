@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f9;
+            padding: 20px;
+        }
+
+        .login-box,
+        .admission,
+        .students {
+            background: rgb(173, 239, 5);
+            padding: 20px;
+            max-width: auto;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ccc;
+            text-align: center;
+        }
+
+        button {
+            width: 400px;
+            padding: 8px;
+            margin: 8px 0;
+
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .step label {
+            width: 150px;
+            font-weight: bold;
+            text-align: right;
+            padding-top: 8px;
+            /* aligns with textarea */
+        }
+
+        input,
+        select {
+            width: 400px;
+            height: 40px;
+            padding: 8px;
+            border: 2px solid grey;
+            border-radius: 10px;
+        }
+
+        textarea {
+            width: 400px;
+            height: 80px;
+            padding: 8px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            resize: none;
+        }
+        .home-back{
+            text-decoration: none;
+            color: #ccc;
+            font-weight: bold;
+        }
+
+        button {
+            background: #ff00a2e6;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            font-weight: bold;
+            width: 100px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 3px solid black;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        table th {
+            background: #007bff;
+            color: white;
+        }
+
+        textarea {
+            width: 100%;
+            height: 60px;
+            margin: 8px 0;
+        }
+
+        h3 {
+            background: #222;
+            color: white;
+            padding: 5px;
+            width: auto;
+        }
+
+        #address {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+    <div id="loginBox" class="login-box">
+        <h2>Admin Login</h2>
+        <button><a href="./welcome.html" class="home-back">Home</a></button>
+        <input id="adminUser" placeholder="Username">
+        <input id="adminPass" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
